@@ -1,0 +1,14 @@
+server:
+  port: 8085
+dubbo:
+  application:
+    name: shop_sso
+  registry:
+    address: zookeeper://10.20.152.63:2181
+  consumer:
+    check: false
+    timeout: 1000
+spring:
+  redis:
+    host: 10.20.152.63
+    password: 123

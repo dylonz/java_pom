@@ -1,7 +1,9 @@
 dubbo:
   application:
     name: shop_service
-    registry: zookeeper://192.168.144.130:2181
+  registry:
+    address: zookeeper://10.20.152.63:2181
+    check: false
 server:
   port: 8081
 spring:
@@ -12,5 +14,5 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.mchange.v2.c3p0.ComboPooledDataSource
 mybatis:
-  type-aliases-package: com.qf.entity
-  mapper-locations: classpath*:com/qf/shop/dao/mapper/*.xml
+  type-aliases-package: com.dylonz.entity
+  mapper-locations: classpath*:com/dylonz/shop/dao/mapper/*.xml
